@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pubmed_fetcher_ranganath"
+version = "0.1.1"
+description = "Fetch PubMed papers with pharma/biotech authors"
+authors = ["ranganath"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = ">=2.32.4,<3.0.0"
+xmltodict = ">=0.14.2,<0.15.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
