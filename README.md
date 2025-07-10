@@ -62,7 +62,7 @@ PMID
 To run the code locally:
 
 
-python cli.py --query "gene therapy" --output results.csv --debug
+python cli.py --query: poetry run get-papers-list "lung cancer AND immunotherapy" -f output.csv -d
 📃 License
 MIT License. See LICENSE for details.
 
